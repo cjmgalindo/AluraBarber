@@ -1,0 +1,254 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Courier New", Courier, monospace;
+  /* border: 1px solid black; */
+}
+
+main {
+  min-height: 55vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  background-color: #bbb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  min-height: 15vh;
+}
+header img {
+  width: 50px;
+}
+header ul {
+  display: flex;
+}
+header ul li {
+  list-style: none;
+  margin: 0 5px;
+}
+header ul li a {
+  color: black;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 15px;
+  transition: 0.1s;
+}
+header ul li a:hover {
+  color: aliceblue;
+  border-bottom: 5px solid black;
+}
+
+footer {
+  background-image: url(../media/imagenes/bg.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  padding: 20px;
+  font-size: 12px;
+  height: 30vh;
+  position: static;
+  bottom: 0;
+}
+footer img {
+  width: 90px;
+}
+
+section {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-color: aqua;
+  width: 100vw;
+}
+section h2 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  margin-bottom: 10px;
+}
+section .banner {
+  width: 100%;
+  display: block;
+}
+section .boxInf {
+  background-color: #fff;
+  padding: 10px;
+}
+section .boxInf #mision {
+  margin: 10px 0;
+}
+section .boxDiferenciales {
+  background-color: #ccc;
+  padding: 10px;
+}
+section .diferenciales {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+}
+section .diferenciales .img {
+  width: 50%;
+}
+section .yt {
+  background-color: #fff;
+  width: 100%;
+  padding: 10px 0;
+}
+section .yt iframe {
+  vertical-align: top;
+  width: 30rem;
+  height: 15rem;
+}
+section .map {
+  background-color: #ccc;
+  width: 100%;
+  padding: 10px 0;
+}
+section .map iframe {
+  width: 100%;
+}
+
+.products {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  flex-wrap: wrap;
+  margin: 10px;
+  gap: 10px;
+}
+.products .box {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  border: 1px solid black;
+  width: 300px;
+}
+.products .box h2 {
+  text-transform: capitalize;
+}
+.products .box img {
+  width: 80%;
+}
+.products .box p {
+  text-align: center;
+  font-size: 12px;
+}
+.products .box .precio {
+  font-weight: bold;
+}
+.products .box:hover {
+  border: 1px solid #c78c19;
+}
+.products .box:hover h2 {
+  font-size: 25px;
+}
+.products .box:active {
+  border-color: green;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: auto;
+  margin: 10px 0;
+  padding: 0 10px;
+}
+form #box {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  gap: 5%;
+}
+form #box label {
+  display: block;
+}
+form #box .inputs fieldset {
+  border: none;
+}
+form input,
+form textarea,
+form select {
+  background-color: #e6e6e6;
+  border: none;
+  border-radius: 10px;
+  padding: 2%;
+  margin-bottom: 15px;
+  width: 96%;
+  resize: none;
+}
+form .edit {
+  width: auto;
+}
+form .btn-submit {
+  color: white;
+  background-color: rgb(83, 94, 95);
+  margin: 10px;
+  cursor: pointer;
+}
+form .btn-submit:hover {
+  color: black;
+  background-color: white;
+  border: 1px solid rgb(83, 94, 95);
+}
+form table {
+  margin: 0;
+  padding: 0;
+  margin: 40px 40px;
+  border-collapse: collapse;
+}
+form table thead {
+  background-color: rgb(65, 87, 88);
+  color: white;
+  text-align: center;
+}
+form table td {
+  border: 1px solid black;
+  padding: 8px 15px;
+}
+
+@media (max-width: 500px) {
+  header {
+    flex-direction: column;
+  }
+  .diferenciales {
+    flex-direction: column-reverse;
+  }
+  .diferenciales img {
+    width: 60%;
+  }
+  section .yt {
+    background-color: aqua;
+    height: auto;
+    padding: 0;
+  }
+  section .yt iframe {
+    width: 100%;
+  }
+  form {
+    width: 100vw;
+    padding: 0;
+  }
+  form #box {
+    flex-direction: column;
+  }
+  form #msg {
+    width: auto;
+  }
+}/*# sourceMappingURL=style.css.map */

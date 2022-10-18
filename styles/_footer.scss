@@ -1,0 +1,19 @@
+footer{
+    background-image: url(../media/imagenes/bg.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    padding: 20px;
+    font-size: 12px;
+    height: 30vh;
+    position: static;
+    bottom: 0;
+    
+
+
+    img{
+        width: 90px;
+    }
+}

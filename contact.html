@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Barberia Alura</title>
+    <link rel="shortcut icon" href="media/logo.svg" type="image/svg">
+    <link rel="stylesheet" href="./styles/style.css">
+    
+    
+    
+</head>
+<body>
+    <header>
+        <img src="./media/imagenes/logo.png" alt="">
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./products.html">Productos</a></li>
+                <li><a href="./contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form>
+            <div id="box">
+                <div class="inputs">
+                    <label for="name">Nombres:</label>
+                    <input type="text" id="name" name="user_name" required >
+                    
+                    <label for="email">Correo electronico</label>
+                    <input type="email" id="email" name="user_email" required placeholder="email@dominio.com">
+                    
+                    <label for="number">Numero de telefono</label>
+                    <input type="num" name="user_number" id="number" required placeholder="(+51) xxx-xxx-xxx">
+                    
+                    <fieldset>
+                        <label for="medio">¿Como le gustaria que lo contactemos?</label>
+                        <input checked class="edit" type="radio" name="user_medio" id="medio"> whatsapp 
+                        <input class="edit" type="radio" name="user_medio" id="medio"> email
+                        <input class="edit" type="radio" name="user_medio" id="medio"> telefono
+                    </fieldset>
+                    
+                    <fieldset>
+                        <label for="atc">¿En cual horario prefiere atencion?</label>
+                        <select name="user_atc" id="atc" class="display">
+                            <option>mañana</option>
+                            <option>tarde</option>
+                            <option>noche</option>
+                        </select>
+                    </fieldset>
+                    <input type="checkbox" checked class="edit">¿Le gustaria recibir informacion sobre la Barberia Alura?
+                </div>
+                
+                <div class="message">
+                    <label for="msg">Mensaje</label>
+                    <textarea name="user_msg" id="msg" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+            
+            <input type="submit" value="enviar formulario" class="btn-submit">
+            <table>
+                <thead>
+                    <tr>
+                        <td>Día</td>
+                        <td>Horario</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lunes</td>
+                        <td>08:00-20:00</td>
+                    </tr>
+                    <tr>
+                        <td>Miercoles</td>
+                        <td>08:00-20:00</td>
+                    </tr>
+                    <tr>
+                        <td>Viernes</td>
+                        <td>08:00-20:00</td>
+                    </tr>
+                </tbody>
+                
+            </table>
+        </form>
+    </main>
+    <footer>
+        <img src="./media/imagenes/logo-blanco.png" alt="">
+        <p>&copy Copyright Barberia Alura - 2022</p>
+    </footer>
+</body>
+</html>

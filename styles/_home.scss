@@ -1,0 +1,67 @@
+section{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: aqua;
+    width: 100vw;
+    
+
+    h2{
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    
+    .banner{
+        width: 100%;
+        display: block;
+    }
+
+    .boxInf{
+        background-color: #fff;
+        padding: 10px;
+        #mision{
+            margin: 10px 0;
+        }
+    }
+    .boxDiferenciales{
+        background-color: #ccc;
+        padding: 10px;
+    }
+    .diferenciales{
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        gap: 5%;
+
+        
+        .img{
+            width: 50%;
+            box-shadow: ;
+        }
+    }
+
+    .yt{
+        background-color: #fff;
+        width: 100%;
+        padding: 10px 0;
+
+        iframe{
+            vertical-align:top;
+            width: 30rem;
+            height: 15rem;
+        }
+    }
+    .map{
+        background-color: #ccc;
+        width: 100%;
+        padding: 10px 0;
+
+        iframe{
+            width: 100%;
+        }
+    }
+}

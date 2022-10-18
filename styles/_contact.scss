@@ -1,0 +1,82 @@
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: auto;
+  margin: 10px 0;
+  padding: 0 10px;
+  
+  #box {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+    width: 100%;
+    gap: 5%;
+
+    label {
+      display: block;
+    }
+
+    .inputs{
+      
+      fieldset{
+        border: none;
+        
+      }
+    }
+    div{
+    } 
+  }
+
+  
+
+  input,
+  textarea,
+  select {
+    background-color: #e6e6e6;
+    border: none;
+    border-radius: 10px;
+    padding: 2%;
+    margin-bottom: 15px;
+    width: 96%;
+    resize: none;
+  }
+
+  .edit {
+    width: auto;
+  }
+
+  .btn-submit {
+    color: white;
+    background-color: rgb(83, 94, 95);
+    margin: 10px;
+    cursor: pointer;
+  }
+
+  .btn-submit:hover{
+    color: black;
+    background-color: white;
+    border: 1px solid rgb(83, 94, 95);
+    
+  }
+
+  table{
+    margin: 0;
+    padding: 0;
+    margin: 40px 40px;
+    border-collapse: collapse;
+    thead{
+      background-color: rgb(65, 87, 88);
+      color: white;
+      text-align: center;
+    }
+    td{
+      border: 1px solid black;
+      padding: 8px 15px;
+    }
+  }
+
+}

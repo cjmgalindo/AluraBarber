@@ -1,0 +1,40 @@
+@media (max-width:500px){
+    header{
+        flex-direction: column;
+    }
+    .diferenciales{
+        flex-direction: column-reverse;
+
+        img{
+            width: 60%;
+        }
+    }
+
+    section{
+        .yt{
+        background-color: aqua;
+        height: auto;
+        padding: 0;
+
+        iframe{
+            width: 100%;
+        }
+    }
+    }
+    
+
+    form{
+        width: 100vw;
+        padding: 0;
+        
+        
+        #box{
+            flex-direction: column;
+               
+
+        }
+        #msg{
+            width: auto;
+        }
+    }
+}

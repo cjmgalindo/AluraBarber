@@ -1,0 +1,51 @@
+
+.products{
+    // display: grid;
+    // grid-template: 1fr / 1fr 1fr 1fr;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    flex-wrap: wrap;
+    margin: 10px;
+    gap: 10px;
+    
+    .box{
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 10px;
+        border: 1px solid black;
+        width: 300px;
+        // max-height: 350px;
+
+        h2{
+            text-transform: capitalize;
+        }
+        img{
+            width: 80%;
+        }
+        p{
+            text-align: center;
+            font-size: 12px;
+        }
+
+        .precio{
+            font-weight: bold;
+            
+        }
+    }
+
+    .box:hover{
+        border:1px solid #c78c19;
+        h2{
+            font-size: 25px;
+            
+        }
+    }
+    .box:active{
+        border-color: green;
+    }
+}
